@@ -59,10 +59,10 @@ WSGI_APPLICATION = 'AgentYou.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django',
-        'USER': 'django',
-        'PASSWORD': 'W91f6GsCba',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'AGENTYOU_DB',
+        'USER': 'root',
+        'PASSWORD': 'root',
         'HOST': 'localhost',
         'PORT': '',
     }
