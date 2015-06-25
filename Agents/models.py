@@ -6,8 +6,8 @@ class AgentUser(models.Model):
 
 class FaceData(models.Model):
     email = models.CharField(max_length=55)
-    DATA_0 = models.ImageField()
-    DATA_1 = models.ImageField()
-    DATA_2 = models.ImageField()
-    DATA_3 = models.ImageField()
-    DATA_4 = models.ImageField()
+    DATA_0 = models.CharField()
+    DATA_1 = models.CharField()
+    DATA_2 = models.CharField()
+    DATA_3 = models.CharField()
+    DATA_4 = models.CharField()

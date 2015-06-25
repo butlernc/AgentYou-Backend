@@ -5,5 +5,5 @@ from django.http import HttpResponse
 def match(request):
     address = request.POST["address"]
     # match incoming picture by running C++ script
-    response = ""
+    response = request.POST["address"]
     return HttpResponse(response)
