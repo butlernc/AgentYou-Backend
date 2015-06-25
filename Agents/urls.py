@@ -5,6 +5,5 @@ from django.conf.urls import url, patterns
 import views
 
 urlpatterns = patterns('',
-    url(r'^create/', views.create),
-
+        url(r'^create/', views.create),
 )
