@@ -17,6 +17,6 @@ def create(request):
     data = "1"
     new_agent_face_data = models.FaceData(email=email, DATA_0=data)
     new_agent_face_data.save()
-    response = ""
+    response = "what upppp niggaaa"
 
     return HttpResponse(response)
