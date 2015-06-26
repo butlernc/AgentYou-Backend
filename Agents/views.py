@@ -1,8 +1,11 @@
 from django.http import HttpResponse
 from Agents import models
+from django.views.decorators.csrf import csrf_exempt
 
 # Creates a new Agent, save's their email and password
 # along with the face data
+
+@csrf_exempt
 def create(request):
     email = request.POST['email']
     password = request.POST['password']
