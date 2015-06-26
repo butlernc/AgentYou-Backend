@@ -1,14 +1,13 @@
 from django.http import HttpResponse
 from Agents import models
-from django.views.decorators.csrf import csrf_exempt
-
+from django.template import RequestContext
 # Creates a new Agent, save's their email and password
 # along with the face data
 
-@csrf_exempt
 def create(request):
-    email = request.POST['email']
-    password = request.POST['password']
+    post_content = RequestContext(request)
+    email = post_content['email']
+    password = post_content['password']
     id_pic_address = ''
 
     new_agent = models.AgentUser(email=email, password=password)
